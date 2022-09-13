@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class TotalSalary {
+
+     static void Salary() {
+    Scanner sc = new Scanner(System.in);
+    int basic = sc.nextInt(); 
+    String str = sc.next();
+    char c = str.charAt(0);
+    int all;
+  }
+     public static void main(String[] args)
+     {
+         int all, basic = 0;
+         char c = 0;
+         
+         switch (c) {
+             case 65:
+                 all = 1700;
+                 break;
+             case 66:
+                 all = 1500;
+                 break;
+             default:
+                 all = 1300;
+                 break;
+         }
+         double totalSalary = ((basic + (0.20*basic) + (0.50*basic) + all ) - (0.11*basic));
+         double p = Math.round(totalSalary);
+         int h = (int)(p);
+         System.out.println(h);
+     }
+}
